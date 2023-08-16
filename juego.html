@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto-Final</title>
+    <!--imagen de solapa-->
+    <link rel="stylesheet" href="./aspecto.css">
+</head>
+<body>
+    <noscript>RECOMENDACIÓN: Con el fin de obtener una óptima experiencia, activar Javascript.</noscript>
+    <nav>
+        <svg><a href="./index.html">
+            <rect class="crema" x="40px" y="20px" fill="#F0E9D2" rx="5"></rect>
+            <polygon class="crema" points="45 70, 30 95, 120 95, 105 70 " fill="#F0E9D2"></polygon>
+            <rect class="azul" x="45px" y="25px" fill="#495579 " rx="5"></rect>
+            <polygon class="azul" points="47 73, 36 92, 114 92, 103 73 " fill="#495579"></polygon></a>
+        </svg>
+        <div id="botones">  
+            <a class="notbutton" id="hyj" href="./historia.html">HISTORIA</a>
+            <a class="notbutton" id="hyj" href="./juego.html">JUGUEMOS</a>
+        </div>
+    </nav>
+
+    <h1>JUGUEMOS UN POCO</h1>
+
+    <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+
+    <div class="container">
+        <div class="figura" id="0" ondrop="drop(event)" ondragover="allowDrop(event)">
+            Arrastre y suelte la imagen aquí
+        </div>
+        <div class="figura" id="1" ondrop="drop(event)" ondragover="allowDrop(event)">
+            Arrastre y suelte la imagen aquí
+        </div>
+        <div class="figura" id="2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            Arrastre y suelte la imagen aquí
+        </div>
+    </div>
+    <div class="container1">
+        <div class="pieza">
+            <img id="img2" ondragstart="drag(event)" src="./imagenes/rompe2.png" alt="imagen de rompecabezas">
+        </div>
+        <div class="pieza">
+            <img id="img1" ondragstart="drag(event)" src="./imagenes/Rompe1.png" alt="imagen de rompecabezas">
+        </div>
+        <div class="pieza">
+            <img id="img3" ondragstart="drag(event)" src="./imagenes/Rompe3.png" alt="imagen de rompecabezas">
+        </div>   
+    </div>        
+    <div><button class="notbutton" id="reiniciar" onclick="reload(evento)">Reiniciar</button></div>
+    <script src="./juego js.js"></script>
+</body>
+</html>
