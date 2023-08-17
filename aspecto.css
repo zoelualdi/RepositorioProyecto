@@ -24,43 +24,9 @@ h1{
     background-image: url(./imagenes/codigo.jpg);
     background-size:100%;
     background-attachment: fixed;
-}.izquierda{
-    display:flex;
-    margin:80px;
-    vertical-align: baseline;
-}
-h2{
-    text-align:center;
-    color: rgb(103, 137, 131);
-    font-size: 40px;
-    text-shadow: 2px 2px black;
-    
-}
-.sub{
-    width:90%;
-    vertical-align: middle;
-}
-.contenedor{
-display: flex;
-align-items: center;
-margin:100px 100px;
-gap: 20px;
-}
-.texto{
-    color:rgb(230, 221, 196);
-    vertical-align: middle;
-    margin:auto;
-    width:80%;
-}
-#exceptionp{
-    width:100%;
-}
-#exceptionh{
-    width:30%;
 }
 .cards{
     width:350px;
-    height:100;
     margin:10%;
     background-color: rgb(230, 221, 196) ;
     border: solid 5px rgb(103, 137, 131);
@@ -70,8 +36,7 @@ gap: 20px;
     text-align: center;
     align-items: center;
 }
-#ayuda{
-   
+#div1,#info,.container,.container1{
     display: flex;
     flex-flow: row;
 }
@@ -117,8 +82,35 @@ a{
     justify-content: center;
     margin:5% 40%;
 }
-
-
+h2{
+    text-align:center;
+    color: rgb(103, 137, 131);
+    font-size: 40px;
+    text-shadow: 2px 2px black;
+    
+}
+.sub{
+    width:90%;
+    vertical-align: middle;
+}
+.contenedor{
+    display: flex;
+    align-items: center;
+    margin:100px 100px;
+    gap: 20px;
+}
+.texto{
+    color:rgb(230, 221, 196);
+    vertical-align: middle;
+    margin:auto;
+    width:80%;
+}
+#exceptionp{
+    width:100%;
+}
+#exceptionh{
+    width:30%;
+}
 #logo{
     width: 80px;
     height: 60px;
@@ -129,12 +121,7 @@ footer{
     justify-content: space-between;
     color: rgb(24, 28, 48);
     background-color: rgb(103, 137, 131);
-    
     padding:40px;
-}
-#info{
-    display:flex;
-    flex-direction: row;
 }
 #presentación{
     font-weight: bold;
@@ -145,7 +132,6 @@ footer{
     align-items: center;
     margin:20px 40px;
     width: 30%;
-    
 }
 .azul{
     width:60px;
@@ -159,10 +145,11 @@ svg{
     height:130px;
 }
 .container,.container1{
-    display:flex;
-    flex-direction: row;
     align-items: center;
-    margin:5% 15%;
+    margin: 5% 17%;
+}
+.container1{
+    gap:5px;
 }
 .figura:hover{
     background-color: rgb(65, 64, 64);
@@ -183,10 +170,10 @@ svg{
     width:275px;
     height:400px;
 }
-.duracion{
+.durationbar{
     color:white;
 }
-#help{
+#reproductor{
     display:flex;
     background-color: black;
     padding:5px;
@@ -221,9 +208,6 @@ video{
     background-color: rgb(26, 25, 25);
     border-radius: 10px;
     justify-content: space-between;
-}
-#mark{
-    color:white;
 }
 rect.crema, polygon.crema{
     animation: bajada1 ease-in 5s  ;

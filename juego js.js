@@ -25,5 +25,3 @@ function drop(evento){
         evento.target.appendChild(document.getElementById(data));
     }
 }
-
-//DRAGGABLE CAMBIAR OPACIDAD CUANDO SUELTO FUERA DE DROP ZONE//
